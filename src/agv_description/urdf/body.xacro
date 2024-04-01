@@ -332,6 +332,5 @@
         <origin xyz="${-(left_fork_width / 2)} ${left_fork_length * (3 / 4)} 0" rpy="0 0 ${pi}" />
         <axis xyz="1 0 0" />
     </joint>
-
-
+    
 </robot>
