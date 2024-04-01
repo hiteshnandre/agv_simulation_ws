@@ -1,0 +1,27 @@
+[0.104s] Invoking command in '/home/fox/agv_simulation_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --build /home/fox/agv_simulation_ws/build/agv_description -- -j8 -l8
+[0.364s] Invoked command in '/home/fox/agv_simulation_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --build /home/fox/agv_simulation_ws/build/agv_description -- -j8 -l8
+[0.402s] Invoking command in '/home/fox/agv_simulation_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --install /home/fox/agv_simulation_ws/build/agv_description
+[0.439s] -- Install configuration: ""
+[0.468s] -- Execute custom install script
+[0.472s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//launch/display.launch.xml
+[0.473s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/body.xacro
+[0.473s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/camera.xacro
+[0.473s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/gazebo.xacro
+[0.473s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/main.xacro
+[0.473s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/properties.xacro
+[0.474s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/ament_index/resource_index/package_run_dependencies/agv_description
+[0.474s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/ament_index/resource_index/parent_prefix_path/agv_description
+[0.474s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/ament_prefix_path.sh
+[0.474s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/ament_prefix_path.dsv
+[0.474s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/path.sh
+[0.475s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/path.dsv
+[0.475s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.bash
+[0.475s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.sh
+[0.475s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.zsh
+[0.476s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.dsv
+[0.476s] -- Symlinking: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/package.dsv
+[0.487s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/ament_index/resource_index/packages/agv_description
+[0.487s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/cmake/agv_descriptionConfig.cmake
+[0.487s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/cmake/agv_descriptionConfig-version.cmake
+[0.487s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/package.xml
+[0.490s] Invoked command in '/home/fox/agv_simulation_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --install /home/fox/agv_simulation_ws/build/agv_description

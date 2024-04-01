@@ -1,0 +1,34 @@
+[0.010s] Invoking command in '/home/fox/agv_simulation_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake /home/fox/agv_simulation_ws/src/agv_description -DCMAKE_INSTALL_PREFIX=/home/fox/agv_simulation_ws/install/agv_description
+[0.184s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.571s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.924s] -- Configuring done
+[1.008s] -- Generating done
+[1.009s] -- Build files have been written to: /home/fox/agv_simulation_ws/build/agv_description
+[1.013s] Invoked command in '/home/fox/agv_simulation_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake /home/fox/agv_simulation_ws/src/agv_description -DCMAKE_INSTALL_PREFIX=/home/fox/agv_simulation_ws/install/agv_description
+[1.015s] Invoking command in '/home/fox/agv_simulation_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --build /home/fox/agv_simulation_ws/build/agv_description -- -j8 -l8
+[1.066s] Invoked command in '/home/fox/agv_simulation_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --build /home/fox/agv_simulation_ws/build/agv_description -- -j8 -l8
+[1.106s] Invoking command in '/home/fox/agv_simulation_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --install /home/fox/agv_simulation_ws/build/agv_description
+[1.118s] -- Install configuration: ""
+[1.118s] -- Execute custom install script
+[1.119s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//launch/display.launch.xml
+[1.119s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/body.xacro
+[1.119s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/camera.xacro
+[1.120s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/gazebo.xacro
+[1.120s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/main.xacro
+[1.120s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description//urdf/properties.xacro
+[1.120s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/ament_index/resource_index/package_run_dependencies/agv_description
+[1.120s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/ament_index/resource_index/parent_prefix_path/agv_description
+[1.121s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/ament_prefix_path.sh
+[1.121s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/ament_prefix_path.dsv
+[1.121s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/path.sh
+[1.121s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/environment/path.dsv
+[1.121s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.bash
+[1.121s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.sh
+[1.122s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.zsh
+[1.122s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/local_setup.dsv
+[1.122s] -- Symlinking: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/package.dsv
+[1.134s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/ament_index/resource_index/packages/agv_description
+[1.135s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/cmake/agv_descriptionConfig.cmake
+[1.135s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/cmake/agv_descriptionConfig-version.cmake
+[1.135s] -- Up-to-date symlink: /home/fox/agv_simulation_ws/install/agv_description/share/agv_description/package.xml
+[1.138s] Invoked command in '/home/fox/agv_simulation_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fox/catch_the_turtle_ws/install/catch_the_turtle:/home/fox/ws/install/camera_vision:/opt/ros/humble /usr/bin/cmake --install /home/fox/agv_simulation_ws/build/agv_description

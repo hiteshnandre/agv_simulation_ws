@@ -1,0 +1,4 @@
+source;share/brinup_agv/local_setup.bash
+source;share/brinup_agv/local_setup.dsv
+source;share/brinup_agv/local_setup.sh
+source;share/brinup_agv/local_setup.zsh

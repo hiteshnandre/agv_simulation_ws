@@ -1,0 +1,16 @@
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv//launch/agv.launch.xml
+/home/fox/agv_simulation_ws/install/brinup_agv/share/ament_index/resource_index/package_run_dependencies/brinup_agv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/ament_index/resource_index/parent_prefix_path/brinup_agv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/environment/ament_prefix_path.sh
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/environment/ament_prefix_path.dsv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/environment/path.sh
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/environment/path.dsv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/local_setup.bash
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/local_setup.sh
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/local_setup.zsh
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/local_setup.dsv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/package.dsv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/ament_index/resource_index/packages/brinup_agv
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/cmake/brinup_agvConfig.cmake
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/cmake/brinup_agvConfig-version.cmake
+/home/fox/agv_simulation_ws/install/brinup_agv/share/brinup_agv/package.xml

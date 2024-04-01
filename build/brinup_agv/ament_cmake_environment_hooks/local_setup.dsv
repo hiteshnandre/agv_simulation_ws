@@ -1,0 +1,2 @@
+source;share/brinup_agv/environment/ament_prefix_path.sh
+source;share/brinup_agv/environment/path.sh

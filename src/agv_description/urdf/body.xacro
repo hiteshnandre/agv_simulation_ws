@@ -1,0 +1,337 @@
+<?xml version="1.0" ?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- PROPERTIES -->
+    <xacro:property name="base_length" value="0.84" />
+    <xacro:property name="base_width" value="0.38" />
+    <xacro:property name="base_height" value="0.75" />
+
+    <xacro:property name="battery_box_length" value="0.84" />
+    <xacro:property name="battery_box_width" value="0.38" />
+    <xacro:property name="battery_box_height" value="0.75" />
+
+    <xacro:property name="right_fork_length" value="1.15" />
+    <xacro:property name="right_fork_width" value="0.18" />
+    <xacro:property name="right_fork_height" value="0.05" />
+
+    <xacro:property name="left_fork_length" value="1.15" />
+    <xacro:property name="left_fork_width" value="0.18" />
+    <xacro:property name="left_fork_height" value="0.05" />
+
+    <xacro:property name="right_corner_rod_length" value="0.05" />
+    <xacro:property name="right_corner_rod_width" value="0.05" />
+    <xacro:property name="right_corner_rod_height" value="1.35" />
+
+    <xacro:property name="left_corner_rod_length" value="0.05" />
+    <xacro:property name="left_corner_rod_width" value="0.05" />
+    <xacro:property name="left_corner_rod_height" value="1.35" />
+
+    <xacro:property name="middle_rod_length" value="0.05" />
+    <xacro:property name="middle_rod_width" value="0.05" />
+    <xacro:property name="middle_rod_height" value="0" />
+
+    <xacro:property name="top_rod_length" value="0.05" />
+    <xacro:property name="top_rod_width" value="0.05" />
+    <xacro:property name="top_rod_height" value="0" />
+
+    <xacro:property name="hmi_length" value="0.25" />
+    <xacro:property name="hmi_width" value="0.20" />
+    <xacro:property name="hmi_height" value="0.08" />
+
+    <xacro:property name="collision_sensor_length" value="0.14" />
+    <xacro:property name="collision_sensor_width" value="0.14" />
+    <xacro:property name="collision_sensor_height" value="0.10" />
+
+    <xacro:property name="connecting_cylinder_radius" value="0.007" />
+    <xacro:property name="connecting_cylinder_length" value="0.15" />
+
+    <!-- <xacro:property name="rear_wheel_connecting_link_length" value="0.05" />
+    <xacro:property name="rear_wheel_connecting_link_width" value="0.05" />
+    <xacro:property name="rear_wheel_connecting_link_height" value="0" /> -->
+
+    <xacro:property name="wheel_radius" value="0.06" />
+    <xacro:property name="wheel_length" value="0.06" />
+
+<!-- LINKS -->
+    <link name="base_footprint" />
+    
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}" />
+            </geometry>
+            <origin xyz="0 ${base_width / 2} ${base_height / 2}"  rpy="0 0 0"/>
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <link name="battery_box_link">
+        <visual>
+            <geometry>
+                <box size="${battery_box_length} ${battery_box_width} ${battery_box_height}" />
+            </geometry>
+            <origin xyz="0 ${battery_box_width / 2} ${battery_box_height / 2}" rpy="0 0 0" />
+            <material name="blue" />
+        </visual>
+    </link>
+    <link name="collision_sensor_link">
+        <visual>
+            <geometry>
+                <box size="${collision_sensor_length} ${collision_sensor_width} ${collision_sensor_height}" />
+            </geometry>
+            <origin xyz="0 ${collision_sensor_width / 2} 0"  rpy="0 0 0"/>
+            <material name="green" />
+        </visual>
+    </link>
+
+    <link name="right_fork_link">
+        <visual>
+            <geometry>
+                <box size="${right_fork_length} ${right_fork_width} ${right_fork_height}" />
+            </geometry>
+            <origin xyz="0 ${right_fork_length / 2} ${right_fork_height / 2}"  rpy="0 0 ${pi / 2}"/>
+            <material name="yellow" />
+        </visual>
+    </link>
+
+    <link name="left_fork_link">
+        <visual>
+            <geometry>
+                <box size="${left_fork_length} ${left_fork_width} ${left_fork_height}" />
+            </geometry>
+            <origin xyz="0 ${left_fork_length / 2} ${left_fork_height / 2}"  rpy="0 0 ${pi / 2}"/>
+            <material name="yellow" />
+        </visual>
+    </link>
+
+    <link name="right_corner_rod_link">
+        <visual>
+            <geometry>
+                <box size="${right_corner_rod_length} ${right_corner_rod_width} ${right_corner_rod_height}" />
+            </geometry>
+            <origin xyz="0 0 ${right_corner_rod_height / 2}"  rpy="0 0 0"/>
+            <material name="yellow" />
+        </visual>
+    </link>
+
+    <link name="left_corner_rod_link">
+        <visual>
+            <geometry>
+                <box size="${left_corner_rod_length} ${left_corner_rod_width} ${left_corner_rod_height}" />
+            </geometry>
+            <origin xyz="0 0 ${left_corner_rod_height / 2}"  rpy="0 0 0"/>
+            <material name="yellow" />
+        </visual>
+    </link>
+ 
+    <link name="middle_rod_link">
+        <visual>
+            <geometry>
+                <box size="${middle_rod_length} ${middle_rod_width} ${(base_length) - (3 * right_corner_rod_length)}" />
+            </geometry>
+            <origin xyz="0 0 0"  rpy="0 ${pi / 2} 0"/>
+            <material name="yellow" />
+        </visual>
+    </link>
+
+    <link name="connecting_cylinder_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${connecting_cylinder_radius}" length="${connecting_cylinder_length}" />
+            </geometry>
+            <origin xyz="0 0 ${connecting_cylinder_length / 2}"  rpy="0 0 0"/>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <link name="hmi_link">
+        <visual>
+            <geometry>
+                <box size="${hmi_length} ${hmi_width} ${hmi_height}" />
+            </geometry>
+            <origin xyz="0 ${hmi_height / 2} 0"  rpy="${pi / 2} 0 0"/>
+            <material name="offwhite" />
+        </visual>
+    </link>
+
+    <link name="top_rod_link">
+        <visual>
+            <geometry>
+                <box size="${top_rod_length} ${top_rod_width} ${(base_length) - (3 * right_corner_rod_length)}" />
+            </geometry>
+            <origin xyz="0 0 0"  rpy="0 ${pi / 2} 0"/>
+            <material name="yellow" />
+        </visual>
+    </link>
+
+    <link name="right_rear_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+            </geometry>
+            <origin xyz="${-(wheel_length / 2)} 0 0"  rpy="0 ${pi / 2} 0"/>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <link name="left_rear_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+            </geometry>
+            <origin xyz="${wheel_length / 2} 0 0"  rpy="0 ${pi / 2} 0"/>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <!-- <link name="rear_wheel_connecting_link">
+        <visual>
+            <geometry>
+                <box size="0 0 0" />
+            </geometry>
+            <origin xyz="0 0 0"  rpy="0 0 0"/>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <link name="rear_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+            </geometry>
+            <origin xyz="0 0 0"  rpy="0 0 0"/>
+            <material name="red" />
+        </visual>
+    </link> -->
+
+    <link name="right_front_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+            </geometry>
+            <origin xyz="${-(wheel_length / 2)} 0 0"  rpy="0 ${pi / 2} 0"/>
+            <material name="red" />
+        </visual>
+    </link>red
+    
+    <link name="left_front_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+            </geometry>
+            <origin xyz="${wheel_length / 2} 0 0"  rpy="0 ${pi / 2} 0"/>
+            <material name="red" />
+        </visual>
+    </link>
+
+    
+<!-- JOINTS -->
+    <joint name="base_footprint_base_link_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_battery_box_joint" type="prismatic">
+        <parent link="base_link" />
+        <child link="battery_box_link" />
+        <origin xyz="0 0 0" rpy="0 0 -3.14" />
+        <axis xyz="0 0 1" />
+        <limit lower="0" upper="0.1" velocity="100" effort="100" />
+    </joint>
+
+    <joint name="base_collision_sensor_box_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="collision_sensor_link" />
+        <origin xyz="0 0${base_width} ${collision_sensor_height - (collision_sensor_height / 4)}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="battery_box_right_fork_joint" type="fixed">
+        <parent link="battery_box_link" />
+        <child link="right_fork_link" />
+        <origin xyz="${battery_box_length / 4} ${battery_box_width} 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="battery_box_left_fork_joint" type="fixed">
+        <parent link="battery_box_link" />
+        <child link="left_fork_link" />
+        <origin xyz="${-(battery_box_length / 4)} ${battery_box_width} 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_right_corner_rod_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="right_corner_rod_link" />
+        <origin xyz="${-(base_length / 2) + 
+        (right_corner_rod_length)} ${(right_corner_rod_width)} ${base_height}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_left_corner_rod_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="left_corner_rod_link" />
+        <origin xyz="${(base_length / 2) - (left_corner_rod_length)} ${left_corner_rod_width} ${base_height}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="right_corner_rod_top_rod_joint" type="fixed">
+        <parent link="right_corner_rod_link" />
+        <child link="top_rod_link" />
+        <origin xyz="${((base_length) - (2 * right_corner_rod_length)) / 2} 0 ${(right_corner_rod_height) - (top_rod_width / 2)}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="right_corner_rod_middle_rod_joint" type="fixed">
+        <parent link="right_corner_rod_link" />
+        <child link="middle_rod_link" />
+        <origin xyz="${((base_length) - (2 * right_corner_rod_length)) / 2} 0 ${right_corner_rod_height / 3}" rpy="0 0 0" />
+    </joint>
+
+    <joint name="middle_rod_connecting_cylinder_joint" type="revolute">
+        <parent link="middle_rod_link" />
+        <child link="connecting_cylinder_link" />
+        <origin xyz="0 0 ${middle_rod_length / 2}" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <limit lower="${- (pi)}" upper="${pi}" velocity="100" effort="100" />
+    </joint>
+
+    <joint name="connecting_cylinder_hmi_joint" type="fixed">
+        <parent link="connecting_cylinder_link" />
+        <child link="hmi_link" />
+        <origin xyz="0 0 ${connecting_cylinder_length}" rpy="0 0 0" />
+    </joint>
+
+    <!-- <joint name="base_rear_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="rear_wheel_link" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <axis xyz="0 0 0" />
+    </joint> -->
+
+    <joint name="base_right_rear_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="right_rear_wheel_link" />
+        <origin xyz="${-(base_length / 2)} ${base_width / 2} 0" rpy="0 0 0" />
+        <axis xyz="1 0 0" />
+    </joint>
+
+    <joint name="base_left_rear_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="left_rear_wheel_link" />
+        <origin xyz="${(base_length / 2)} ${base_width / 2} 0" rpy="0 0 0" />
+        <axis xyz="1 0 0" />
+    </joint>
+
+    <joint name="base_right_front_wheel_joint" type="continuous">
+        <parent link="right_fork_link" />
+        <child link="right_front_wheel_link" />
+        <origin xyz="${right_fork_width / 2} ${right_fork_length * (3 / 4)} 0" rpy="0 0 ${pi}" />
+        <axis xyz="1 0 0" />
+    </joint>
+
+    <joint name="base_left_front_wheel_joint" type="continuous">
+        <parent link="left_fork_link" />
+        <child link="left_front_wheel_link" />
+        <origin xyz="${-(left_fork_width / 2)} ${left_fork_length * (3 / 4)} 0" rpy="0 0 ${pi}" />
+        <axis xyz="1 0 0" />
+    </joint>
+
+
+</robot>
